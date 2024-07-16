@@ -18,14 +18,12 @@
     min-inline-size: 320px;
     min-block-size: 100dvb;
     font-family: var(--font-var);
-    font-weight: var(--weight-text, 400);
     font-variation-settings: var(--weight-text);
     background-color: var(--page-background-color);
     background-image: var(--page-background-image);
     background-size: cover;
     background-attachment: fixed;
     color: var(--themes-main-color);
-    font-variation-settings: "wght" var(--font_weight_body);
 }
 
 .header {
@@ -126,7 +124,6 @@
     line-height: normal;
     font-variation-settings: "wght" var(--weight_title);
     padding: 5px 10px;
-    font-weight: var(--font_weight_title);
 }
 
 .post-list {
