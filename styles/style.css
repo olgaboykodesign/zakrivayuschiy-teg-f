@@ -25,6 +25,7 @@
     background-size: cover;
     background-attachment: fixed;
     color: var(--themes-main-color);
+    font-variation-settings: "wght" var(--font_weight_body);
 }
 
 .header {
@@ -123,8 +124,9 @@
 .post-title {
     font-size: 18px;
     line-height: normal;
-    font-variation-settings: "wght" var(--font-var, 700);
+    font-variation-settings: "wght" var(--weight_title);
     padding: 5px 10px;
+    font-weight: var(--font_weight_title);
 }
 
 .post-list {
@@ -378,7 +380,7 @@ button {
 }
 
 .filter-invert {
-    filter: invert(0.7);
+    filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
 }
 
 .button-footer {

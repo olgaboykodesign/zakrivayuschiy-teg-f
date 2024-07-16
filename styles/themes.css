@@ -9,14 +9,17 @@
     --page-background-color: #ffffff;
     --button-text-color: #ffffff;
     --page-background-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --weight_title: 700;
+    --weight_text: 400;
 }
-
 
 :root.theme-dark {
     --themes-main-color: rgba(0, 204, 20, 1);
     --page-background-color: rgba(0, 0, 0, 1);
     --button-text-color: rgba(0, 204, 20, 1);
     --page-background-image: repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px), repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
+    --weight_title: 785;
+    --weight_text: 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,4 +28,7 @@
         --page-background-color: rgba(0, 0, 0, 1);
         --button-text-color: rgba(0, 204, 20, 1);
         --page-background-image: repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px), repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px), linear-gradient(to bottom, #007f0c, #004306);
+        --weight_title: 785;
+        --weight_text: 465;
     }
+}

@@ -14,8 +14,8 @@
     --button-text-color: #ffffff;
     --page-background-color: #ffffff;
     --page-background-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, #d3d3d300 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    --weight-text: font-weight: 465;
-    --weight-title: font-weight:;
+    --weight_title: 700;
+    --weight_text: 400;
     --like-icon-counter: var(--themes-main-color);
     --like-icon-sparks: #FF0000;
 }
