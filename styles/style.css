@@ -429,6 +429,7 @@ button {
 .modal__content {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .modal__icon {
@@ -447,25 +448,29 @@ button {
 }
 
 .footer {
-    padding-block: 54px;
+    padding-block-start: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-block-end: 103px;
 }
 
 @media (max-width:375px) {
+    .footer {
+        padding-block-end: 100px;
+    }
 
     .button-footer {
         flex-direction: column;
     }
 
+    .button__icon {
+        block-size: 28px;
+        inline-size: 28px;
+    }
+
     .modal {
         inline-size: 341px;
         padding-inline: 40px;
-    }
-
-    .modal__icon {
-        width: 28px;
-        height: 28px;
     }
 }
