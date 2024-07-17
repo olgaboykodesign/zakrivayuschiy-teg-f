@@ -227,7 +227,7 @@
 
 .button:focus-visible {
     box-shadow: 2px 2px currentColor;
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
     outline: none;
 }
 
