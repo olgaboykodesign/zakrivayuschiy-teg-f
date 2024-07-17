@@ -51,7 +51,7 @@
 }
 
 .header_subtitle {
-    font-size: 23px;
+    font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .theme-menu__list {
@@ -84,6 +84,13 @@
     transform-origin: left;
     inline-size: 100%;
     block-size: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.theme-menu__button:hover:not(:disabled)::after {
+    transform: scaleX(1);
 }
 
 .theme-menu__button:hover {
@@ -157,8 +164,8 @@
 
 .lable-image {
     position: absolute;
-    inset-block-start: 25px;
-    inset-inline-end: 25px;
+    inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
+    inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
     font-size: 14px;
     font-family: var(--accent-font-family);
     font-style: normal;
@@ -205,6 +212,7 @@ button {
     line-height: normal;
     background-color: var(--page-background-color);
     position: relative;
+    cursor: pointer;
 }
 
 .button__text,
@@ -241,21 +249,22 @@ button {
 .card__icon-button {
     position: relative;
     display: flex;
-    align-items: end;
-    min-height: 36px;
-    border: none;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
     z-index: 1;
+    block-size: 38px;
+    align-items: center;
+    border: 2px solid transparent;
 }
 
 .card__icon-button:focus {
     outline: none;
 }
 
-.card__icon-button:focus-within {
+.card__icon-button:focus-visible {
     outline: none;
+    border-color: var(--themes-main-color);
 }
 
 .card__icon-button::before {
@@ -276,7 +285,7 @@ button {
     padding: 9px 17px;
     line-height: 90%;
     min-inline-size: 130px;
-    min-block-size: 38px;
+    block-size: 38px;
     cursor: pointer;
 }
 
@@ -301,11 +310,16 @@ button {
     transition: fill 0.3s linear;
 }
 
+.like-icon .counter {
+    fill: var(--themes-main-color);
+    transition: fill 0.1s linear;
+}
+
 /* Hover */
 
 .like-icon:hover .core {
     fill: var(--themes-main-color);
-    transition: fill 0.3s linear 0.03s;
+    transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
@@ -392,11 +406,13 @@ button {
 .modal {
     gap: 30px;
     font-family: var(--accent-font-family);
-    line-height: 1.5;
+    line-height: 150%;
+    font-size: 14px;
     text-transform: uppercase;
     background: var(--page-background-color, #ffffff);
     max-inline-size: 355px;
     padding: 30px;
+    \: 40px;
     display: none;
     flex-direction: column;
     color: var(--themes-main-color);
@@ -429,8 +445,6 @@ button {
 
 .modal__button {
     inline-size: 100%;
-    z-index: 1;
-    mix-blend-mode: difference;
 }
 
 .footer {
@@ -444,6 +458,11 @@ button {
 
     .button-footer {
         flex-direction: column;
+    }
+
+    .modal {
+        inline-size: 341px;
+        padding-inline: 40px;
     }
 
     .modal__icon {
