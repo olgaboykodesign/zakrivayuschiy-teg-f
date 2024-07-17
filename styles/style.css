@@ -204,7 +204,7 @@
 }
 
 button {
-    padding-block: 9px;
+    padding-block: 10px;
     padding-inline: 17px;
     font-family: var(--accent-font-family);
     font-size: 14px;
