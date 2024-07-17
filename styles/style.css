@@ -412,7 +412,6 @@ button {
     background: var(--page-background-color, #ffffff);
     max-inline-size: 355px;
     padding: 30px;
-    \: 40px;
     display: none;
     flex-direction: column;
     color: var(--themes-main-color);
